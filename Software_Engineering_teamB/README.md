@@ -26,42 +26,63 @@
 
 ## Project Structure
 ```
-├── Pokemon.h
-|   ├── travel.c
-|   ├── buy.c
-|   ├── enemyAttack.c
-|   └── fight.c
-├── Pokemon.c
-|   └── Pokemon_list.txt
+
+web
+├── Lectures.jsp
+├── MyInfo.jsp
+├── index.jsp
+├── joinAction.jsp
+├── login.jsp
+├── loginAction.jsp
+├── reservation.jsp
+├── bat
+├── css
+├── images
+├── js
+
 ```
 
-- Pokemon.h
-게임 진행에 필요한 모듈들의 헤더 파일
+- *.jsp
+웹 화면 구성에 필요한 jsp 파일
   
-  - travel.c : 여행을 떠나는 함수
-  - buy.c : 상점가는 함수
-  - enemyAttack.c : 적이 공격하는 함수
-  - fight.c : 적과 싸우는 함수
+  - Lectures : 강의 목록 전시 페이지
+  - MyInfo : 마이페이지
+  - joinAction : 회원가입 데이터 렌더링
+  - login : 로그인 페이지
+  - loginAction : 회원 정보 렌더링
+  - reservation : 강의실 좌석 예약 페이지
+  
+- bat/ css/ images/ js
+웹페이지 구성에 필요한 리소스를 모아놓은 폴더
+  
 
-- Pokemon.c
-게임 소스 코드
-  - Pokemon_list.txt : 포켓몬 목록 txt
+## Files
+- 요구사항 분석.pdf : 유즈케이스 다이어그램, 도메인 모델, user story 흐름도
+- 프로젝트 계획서.pdf
 
-<!--
 ## Features
-#### 1. 
--->
+#### 1. 로그인
+      - consolelog 기능
+     2. 강의 정보
+      - 강의 목록 확인
+      - 강의 계획서 출력
+     3. 예약 
+      - 좌석 예약
+      - 예약 조회
+      - 예약 취소
+      
+
 
 
 
 ## Issue
 
-* [X] 죽은 야생 포켓몬들이 다시 등장할 때 체력이 회복이 안되는 형상
-* [X] 내 포켓몬 수는 유지 안되는 현상
-* [X] 내가 쓰러지면 모든 포켓몬이 체력이 회복되지 않는 현상
-* [X] 도망가도 공격한다고 출력되는 현상
-* [X] 체력이 50% 이상이어도 몬스터볼 던지기가 가능한 현상
-* [X] 포켓몬 볼 0개를 사면 가방이 비는 현상
+* [X] 톰캣 연동시에 에러 메세지가 출력되는 현상
+* [X] 프로젝트 환경 구성 시에 로컬만 적용되고 원격에는 반영되지 않는 현상 
+* [X] maria DB 연동 시 이전에 했던 프로젝트 데이터가 불러와지는 현상
+* [X] DB 연동시 platform independent를 맞추지 않아 연결되지 않는 현상
+* [X] 마이페이지에 이전 사용자의 정보가 들어가 있는 현상
+
 
 
 <!--
@@ -103,6 +124,14 @@ Before you begin, ensure you have met the following requirements:
 
 
 
+## Feedback
+- 테스트 도구의 활용이 기본에 충실했다. 더욱 다양한 기능을 사용해 봐라
+- 깃허브 브랜치 네트워크 모양이 특정 몇 명에게 치우쳐져있다. 참여하지 않은 팀원들도 문제지만 관리하지 못한 팀장의 문제이다.
+- 데일리 미팅 진행 과정을 산출물로 남겼으면 좋았을 것이다.
+- 통합 테스팅을 마지막에만 하였는데 글면 안된다. 통합 테스팅은 매 스프린트가 끝날 때 해야한다. ex) 총 3개의 스프린트라면 3번 했어야 했다.
+- 로컬 환경이 아닌 AWS 배포까지 생각해 봐라
+- 회사에서는 main, feature 브랜치 사이에 develop 브랜치를 둔다.
+- 좌석 정보를 실제 강의 사이트에서 크롤링하여 반영하였으면 더 좋았을 것이다.
 
 
 
@@ -111,5 +140,5 @@ Before you begin, ensure you have met the following requirements:
 👤 **SangBoem-Hahn**
 
 - Github: [@SangBoem-Hahn](https://github.com/SangBoem-Hahn)
-- Blog : [Tistory(pokemon)](https://hsb422.tistory.com/entry/%EB%AF%B8Pokemon-Project)
+- Blog : [Tistory](https://hsb422.tistory.com/)
 ---
