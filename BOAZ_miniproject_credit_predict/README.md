@@ -35,7 +35,7 @@ https://dacon.io/competitions/official/235713/overview/description
 하지만 해당 과제는 다항 분류로, 성능평가지표 계산을 위해 3x3의 정오행렬이 생성됨. 
 또한 예측이 틀린 정도에 따라 경우에 패널티가 바뀌는 성능평가지표로 판단하고자 하였음.
 
-![sol1](https://github.com/SangBeom-Hahn/Kdata_Team_Project/blob/main/solution/sol1.PNG)
+![loss](https://github.com/SangBeom-Hahn/Mini_Project/blob/master/BOAZ_miniproject_credit_predict/logloss.jpg)
 
 
 ### Model Result
