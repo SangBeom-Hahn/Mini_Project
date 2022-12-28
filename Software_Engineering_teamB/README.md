@@ -59,25 +59,29 @@ web
 ## Files
 - 프로젝트 계획서.pdf
 - 요구사항 분석.pdf : usecase diagram, domain model, user story 흐름도
+
 1. usecase diagram
 ![model](./assests/usecase.PNG)
+
 
 2. domain model
 ![model](./assests/domain.PNG)
 
+
 3. user story
 ![model](./assests/story.PNG)
 
+
 ## Features
 1. 로그인
-- consolelog 기능
+  - consolelog 기능
 2. 강의 정보
-- 강의 목록 확인
-- 강의 계획서 출력
+  - 강의 목록 확인
+  - 강의 계획서 출력
 3. 예약 
-- 좌석 예약
-- 예약 조회
-- 예약 취소
+  - 좌석 예약
+  - 예약 조회
+  - 예약 취소
       
 
 
