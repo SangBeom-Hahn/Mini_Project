@@ -9,19 +9,19 @@
 
 ## ✨ Demo
 
-### start
+### login
 <p align ="center">
-  <img src = "https://user-images.githubusercontent.com/90328527/200818048-231e8172-21c6-4a82-a0ce-01e944c6fea4.gif">
+  <img src = "https://user-images.githubusercontent.com/90328527/209787062-56874ee4-7728-47c3-965b-eb35f7204029.gif">
 </p>
 
-### run
+### reserve
 <p align ="center">
-  <img src = "https://user-images.githubusercontent.com/90328527/200817948-cac44620-3282-41a4-945f-e4dc51d526de.gif">
+  <img src = "https://user-images.githubusercontent.com/90328527/209787162-f1faf971-c841-4c88-b90d-11d7c93c9371.gif">
 </p>
 
-### catch
+### myPage
 <p align ="center">
-  <img src = "https://user-images.githubusercontent.com/90328527/200817859-43f744a1-55f9-40b0-bf9c-0492bf0febbc.gif">
+  <img src = "https://user-images.githubusercontent.com/90328527/209787230-18ae797b-b002-4b3a-be99-0cdd34526149.gif">
 </p>
 
 ## Project Structure
@@ -57,19 +57,27 @@ web
   
 
 ## Files
-- 요구사항 분석.pdf : 유즈케이스 다이어그램, 도메인 모델, user story 흐름도
 - 프로젝트 계획서.pdf
+- 요구사항 분석.pdf : usecase diagram, domain model, user story 흐름도
+1. usecase diagram
+![model](./assests/usecase.PNG)
+
+2. domain model
+![model](./assests/domain.PNG)
+
+3. user story
+![model](./assests/story.PNG)
 
 ## Features
-#### 1. 로그인
-      - consolelog 기능
-     2. 강의 정보
-      - 강의 목록 확인
-      - 강의 계획서 출력
-     3. 예약 
-      - 좌석 예약
-      - 예약 조회
-      - 예약 취소
+1. 로그인
+- consolelog 기능
+2. 강의 정보
+- 강의 목록 확인
+- 강의 계획서 출력
+3. 예약 
+- 좌석 예약
+- 예약 조회
+- 예약 취소
       
 
 
