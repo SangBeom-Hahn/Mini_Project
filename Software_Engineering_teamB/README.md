@@ -61,14 +61,17 @@ web
 - 요구사항 분석.pdf : usecase diagram, domain model, user story 흐름도
 
 1. usecase diagram
+2. 
 ![model](./assests/usecase.PNG)
 
 
 2. domain model
+3. 
 ![model](./assests/domain.PNG)
 
 
 3. user story
+4. 
 ![model](./assests/story.PNG)
 
 
