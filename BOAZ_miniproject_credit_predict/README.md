@@ -56,5 +56,5 @@ Log loss 값이 낮은 LightGBM을 최종적으로 선택함
 ## Author
 👤 **SangBoem-Hahn**
 
-- Github: [@SangBoem-Hahn](https://github.com/SangBoem-Hahn)
+- Github: [@SangBoem-Hahn](https://github.com/SangBeom-Hahn)
 - Blog : [Tistory](https://hsb422.tistory.com/)
