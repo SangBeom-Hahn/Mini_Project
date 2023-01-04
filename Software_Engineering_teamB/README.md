@@ -151,6 +151,6 @@ Before you begin, ensure you have met the following requirements:
 
 👤 **SangBoem-Hahn**
 
-- Github: [@SangBoem-Hahn](https://github.com/SangBoem-Hahn)
+- Github: [@SangBoem-Hahn](https://github.com/SangBeom-Hahn)
 - Blog : [Tistory](https://hsb422.tistory.com/)
 ---
