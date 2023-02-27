@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  emotion_flask:
+    build:
+      context: ./ai_docker_project
+      dockerfile: Dockerfile
+    image: emotion_flask:1.0
+    container_name: emotion_flask
+    hostname: myservice
+    ports:
+      - 8050:5000
