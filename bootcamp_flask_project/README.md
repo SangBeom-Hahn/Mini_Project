@@ -8,7 +8,7 @@
 
 
 ## ✨ Screenshot
-![shot1](./assests/usecase.PNG)
+![shot1](https://github.com/SangBeom-Hahn/Mini_Project/blob/master/bootcamp_flask_project/assests/shot1.PNG)
 
 ## Project Structure
 ```
