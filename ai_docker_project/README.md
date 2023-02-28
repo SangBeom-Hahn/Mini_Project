@@ -7,10 +7,10 @@
 ## ✨ Screenshot
 
 ### container run
-![shot1](https://github.com/SangBeom-Hahn/Sketch2Fashion/blob/main/assests/model.png)
+![shot1](https://github.com/SangBeom-Hahn/Mini_Project/blob/master/ai_docker_project/assests/shot1.PNG)
 
 ### inference
-![shot2](https://github.com/SangBeom-Hahn/Sketch2Fashion/blob/main/assests/model.png)
+![shot2](https://github.com/SangBeom-Hahn/Mini_Project/blob/master/ai_docker_project/assests/shot2.PNG)
 
 ## Dataset
 
