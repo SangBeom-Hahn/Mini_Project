@@ -43,9 +43,6 @@ RUN apt-get -y install libgl1-mesa-glx && apt-get -y install libglib2.0-0
 EXPOSE 5000
 CMD ["python", "app.py"]
 ```
-(여기 적어라)
-
-
 
 ## docker-compose.yml
 ```
@@ -62,3 +59,41 @@ services:
     ports:
       - 8050:5000
 ```
+
+```
+root
+├── Dockerfile
+├── requirements.txt
+└── app
+    ├── models
+    ├── static
+    ├── templates
+    └── views
+docker-compose.yml
+```
+
+- root/Dockerfile : 도커 파일
+- root/app : 어플리케이션 코드
+- docker-compose.yml : 도커 컴포즈 yml 
+
+## Requirements
+```
+tensorflow==2.x
+Flask==2.2.2
+h5py==3.8.0
+Jinja2==3.1.2
+keras==2.11.0
+numpy==1.24.2
+opencv-python==4.7.0.68
+```
+
+## reference
+- [Facial Expression Recognition using Convolutional Neural Networks](https://arxiv.org/abs/1612.02903)
+- [Affect Expression Behaviour Analysis in the Wild using Spatio-Channel Attention and Complementary Context Information](https://arxiv.org/pdf/2009.14440v2.pdf)
+
+## Author
+
+👤 **SangBoem-Hahn**
+
+- Github: [@SangBoem-Hahn](https://github.com/SangBeom-Hahn)
+- Blog : [Tistory(AI_with_docker)](https://hsb422.tistory.com/entry/%E3%85%81%EB%8F%84%EC%BB%A4-PART%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%8F%84%EC%BB%A4-%ED%99%9C%EC%9A%A9SW-bootcamp)
