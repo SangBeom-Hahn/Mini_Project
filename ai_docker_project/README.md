@@ -60,6 +60,7 @@ services:
       - 8050:5000
 ```
 
+## Project Structure
 ```
 root
 ├── Dockerfile
