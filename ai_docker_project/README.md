@@ -76,6 +76,8 @@ docker-compose.yml
 - root/Dockerfile : 도커 파일
 - root/app : 어플리케이션 코드
 - docker-compose.yml : 도커 컴포즈 yml 
+- models : 감정 인식 모델 적재 폴더
+- static/ templates/ views : 웹페이지 구성에 필요한 리소스를 모아놓은 폴더
 
 ## Requirements
 ```
