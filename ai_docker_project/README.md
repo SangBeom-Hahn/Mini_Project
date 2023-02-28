@@ -96,4 +96,4 @@ opencv-python==4.7.0.68
 👤 **SangBoem-Hahn**
 
 - Github: [@SangBoem-Hahn](https://github.com/SangBeom-Hahn)
-- Blog : [Tistory(AI_with_docker)](https://hsb422.tistory.com/entry/%E3%85%81%EB%8F%84%EC%BB%A4-PART%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%8F%84%EC%BB%A4-%ED%99%9C%EC%9A%A9SW-bootcamp)
+- Blog : [Tistory(AI_With_Docker)](https://hsb422.tistory.com/entry/%E3%85%81%EB%8F%84%EC%BB%A4-PART%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EB%8F%84%EC%BB%A4-%ED%99%9C%EC%9A%A9SW-bootcamp)
