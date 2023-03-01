@@ -18,12 +18,12 @@ bootcamp_flask_project
 ├── templates
 ├── views
 └── __init__.py
+```
 
 - static : 웹페이지 구성에 필요한 리소스를 모아놓은 폴더
 - templates : 템플릿 폴더
 - views : 라우팅 함수 폴더
 - __init__ : 어플리케이션 펙토리 실행 코드
-```
 
 ## Features
 1. 파일 업로드
