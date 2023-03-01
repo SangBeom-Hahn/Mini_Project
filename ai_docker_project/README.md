@@ -73,8 +73,9 @@ root
 docker-compose.yml
 ```
 
-- root/Dockerfile : 도커 파일
-- root/app : 어플리케이션 코드
+- root : root 폴더
+    - Dockerfile : 도커파일
+    - app : 어플리케이션 코드
 - docker-compose.yml : 도커 컴포즈 yml
 
 ## Requirements
