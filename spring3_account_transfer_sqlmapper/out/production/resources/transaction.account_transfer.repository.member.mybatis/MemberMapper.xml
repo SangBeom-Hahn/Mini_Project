@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="transaction.account_transfer.repository.member.mybatis.MemberMapper">
+    <insert id="save">
+        insert into member (LOGINID, PASSWORD, USERNAME, MONEY)
+        values (#{loginId}, #{password}, #{username}, #{money})
+    </insert>
+    <update id="update">
+        update member
+        set MONEY = #{money}
+        where LOGINID = #{id}
+    </update>
+    <select id="findAll" resultType="Member">
+        select LOGINID, PASSWORD, USERNAME, MONEY
+        from member
+    </select>
+    <select id="findByLoginId" resultType="Member">
+        select LOGINID, PASSWORD, USERNAME, MONEY
+        from member
+        where LOGINID = #{loginId}
+    </select>
+</mapper>
