@@ -1,5 +1,7 @@
 package baseball.domain;
 
+import baseball.utils.InputConstant;
+
 public class Result {
     private int strikeCnt;
     private int ballCnt;
@@ -15,5 +17,9 @@ public class Result {
 
     public int getBallCnt() {
         return ballCnt;
+    }
+    
+    public boolean checkAllStrike() {
+        return strikeCnt == InputConstant.INPUT_NUMBER_SIZE;
     }
 }

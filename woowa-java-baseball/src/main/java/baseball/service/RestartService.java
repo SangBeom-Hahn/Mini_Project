@@ -4,13 +4,12 @@ import baseball.domain.RestartStatus;
 import baseball.utils.InputConstant;
 
 import static baseball.utils.ExceptionConstant.RestartException.RESTART_OR_END_ONE_OR_TWO_EXCEPTION;
-import static baseball.view.InputView.inputNumber;
-import static baseball.view.InputView.printRestartStatusMessage;
+import static baseball.view.InputView.*;
 
 public class RestartService {
     public static RestartStatus restartOrTerminate() {
         printRestartStatusMessage();
-        String restartStatus = inputNumber();
+        String restartStatus = inputRestartStatus();
         validateRestartStatusNotOneOrTwo(restartStatus);
         if (restartStatus.equals(InputConstant.INPUT_RESTART)) {
             return RestartStatus.RESTART;

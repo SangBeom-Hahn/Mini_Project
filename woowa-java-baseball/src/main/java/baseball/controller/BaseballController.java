@@ -3,6 +3,7 @@ package baseball.controller;
 import baseball.domain.*;
 import baseball.utils.InputConstant;
 
+import static baseball.domain.RestartStatus.*;
 import static baseball.service.RestartService.restartOrTerminate;
 import static baseball.service.ResultService.result;
 import static baseball.view.InputView.printInputMessage;
@@ -16,12 +17,12 @@ public class BaseballController {
 
     public BaseballController() {
         user = new User();
-        restartStatus = RestartStatus.RESTART;
+        restartStatus = RESTART;
     }
 
     public void run() {
         gameStart();
-        while (restartStatus != RestartStatus.END) {
+        while (restartStatus != END) {
             playGame();
             gameOver();
         }
@@ -40,7 +41,7 @@ public class BaseballController {
     }
 
     private void gameOver() {
-        if (result.getStrikeCnt() == InputConstant.INPUT_NUMBER_SIZE) {
+        if (result.checkAllStrike()) {
             printGameOverMessage();
             restartStatus = restartOrTerminate();
         }

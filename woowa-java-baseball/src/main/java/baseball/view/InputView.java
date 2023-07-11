@@ -1,6 +1,8 @@
 package baseball.view;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static baseball.utils.ExceptionConstant.InputException.INPUT_NUMBER_HAS_NOT_SPACE_EXCEPTION;
 import static baseball.utils.ExceptionConstant.InputException.INPUT_NUMBER_HAS_NOT_SPECIAL_CHARACTER_EXCEPTION;
@@ -14,7 +16,14 @@ public class InputView {
     private InputView() {
     }
 
-    public static String inputNumber() {
+    public static List<String> inputNumber() {
+        String inputNumber = readLine();
+        validateInputNumberIsNumeric(inputNumber);
+        validateHasWhiteSpace(inputNumber);
+        return convertToStringList(inputNumber);
+    }
+    
+    public static String inputRestartStatus() {
         String inputNumber = readLine();
         validateInputNumberIsNumeric(inputNumber);
         validateHasWhiteSpace(inputNumber);
@@ -27,6 +36,11 @@ public class InputView {
 
     public static void printInputMessage() {
         System.out.println(INPUT_MESSAGE);
+    }
+    
+    private static List<String> convertToStringList(String inputNumber) {
+        return Arrays.stream(inputNumber.split(""))
+          .collect(Collectors.toList());
     }
 
     private static void validateHasWhiteSpace(final String inputNumber) {

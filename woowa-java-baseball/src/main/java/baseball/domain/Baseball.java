@@ -18,26 +18,25 @@ public class Baseball {
     }
 
     private List<String> generateBaseballNumber() {
-        String inputNumber = inputNumber();
+        List<String> inputNumber = inputNumber();
         validateInputNumberSize(inputNumber);
         validateInputNumberHasDuplicate(inputNumber);
 
-        return Arrays.stream(inputNumber.split(""))
-                .collect(Collectors.toList());
+        return inputNumber;
     }
 
-    private void validateInputNumberHasDuplicate(final String inputNumber) {
+    private void validateInputNumberHasDuplicate(final List<String> inputNumber) {
         if (hasDuplicate(inputNumber)) {
             throw new IllegalArgumentException(INPUT_NUMBER_HAS_NOT_DUPLICATE_EXCEPTION.message);
         }
     }
 
-    private static boolean hasDuplicate(final String inputNumber) {
-        return Arrays.stream(inputNumber.split("")).distinct().count() != INPUT_NUMBER_SIZE;
+    private static boolean hasDuplicate(final List<String> inputNumber) {
+        return inputNumber.stream().distinct().count() != INPUT_NUMBER_SIZE;
     }
 
-    private void validateInputNumberSize(final String inputNumber) {
-        if (inputNumber.length() != 3) {
+    private void validateInputNumberSize(final List<String> inputNumber) {
+        if (inputNumber.size() != 3) {
             throw new IllegalArgumentException(INPUT_NUMBER_LENGTH_EXCEPTION.message);
         }
     }

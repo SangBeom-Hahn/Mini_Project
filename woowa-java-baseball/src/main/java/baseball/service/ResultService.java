@@ -6,7 +6,10 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class ResultService {
-    public static Result result(final List<String> userBaseballNumber, final List<String> computerRandomNumber) {
+    public static Result result(
+      final List<String> userBaseballNumber,
+      final List<String> computerRandomNumber
+    ) {
         int strikeCount = getStrikeCount(userBaseballNumber, computerRandomNumber);
         int ballCount = getBallCount(userBaseballNumber, computerRandomNumber);
 

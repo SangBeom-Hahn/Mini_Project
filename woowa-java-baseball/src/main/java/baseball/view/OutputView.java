@@ -18,22 +18,27 @@ public class OutputView {
     public static void printGameOverMessage() {
         System.out.println(GAME_OVER_MESSAGE);
     }
-
+    
     public static void printResultMessage(final int strikeCount, final int ballCount) {
-        if (strikeCount == STRIKE_COUNT) {
-            System.out.println(THREE_STRIKE);
-        }
-        if (strikeCount != ZERO && ballCount == ZERO) {
-            System.out.println(strikeCount + STRIKE);
-        }
-        if (strikeCount == ZERO && ballCount != ZERO) {
-            System.out.println(ballCount + BALL);
-        }
+        System.out.println(refineResultMessage(strikeCount, ballCount));
+    }
+    public static String  refineResultMessage(final int strikeCount, final int ballCount) {
         if (strikeCount == ZERO && ballCount == ZERO) {
-            System.out.println(NOTHING);
+            return NOTHING;
         }
-        if (strikeCount != ZERO && ballCount != ZERO) {
-            System.out.println(ballCount + BALL + " " + strikeCount + STRIKE);
+    
+        StringBuilder resultFormat = new StringBuilder();
+    
+        if (ballCount > ZERO) {
+            resultFormat.append(ballCount)
+              .append(BALL + " ");
         }
+    
+        if (strikeCount > ZERO) {
+            resultFormat.append(strikeCount)
+              .append(STRIKE);
+        }
+        
+        return resultFormat.toString();
     }
 }

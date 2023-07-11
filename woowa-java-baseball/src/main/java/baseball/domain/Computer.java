@@ -40,7 +40,10 @@ public class Computer {
         return randomNumber.size() < INPUT_NUMBER_SIZE;
     }
 
-    private boolean isContain(final List<String> randomNumber, final String digit) {
+    private boolean isContain(
+      final List<String> randomNumber,
+      final String digit
+    ) {
         return randomNumber.contains(digit);
     }
 
