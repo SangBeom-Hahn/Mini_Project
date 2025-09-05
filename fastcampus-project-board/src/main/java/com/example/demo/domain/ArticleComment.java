@@ -2,15 +2,13 @@ package com.example.demo.domain;
 
 import java.time.LocalDateTime;
 
-public class Article {
+public class ArticleComment {
 
     private Long id;
 
-    private String title;
+    private Article article;
 
     private String content;
-
-    private String hashtag;
 
     private LocalDateTime createdAt;
 
